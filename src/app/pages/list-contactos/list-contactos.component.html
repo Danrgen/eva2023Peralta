@@ -1,0 +1,11 @@
+<span *ngIf="listadoContactos.length == 0">
+    No existen contactos
+</span>
+
+<ul>
+    <li *ngFor="let contacto of listadoContactos">
+        <a (click)="editar(contacto)">{{contacto.cedula}} | {{contacto.nombre}} | {{contacto.direccion}}</a>
+        <button (click)="eliminar(contacto)">Eliminar</button>
+    </li>
+    
+</ul>

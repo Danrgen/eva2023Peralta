@@ -1,0 +1,13 @@
+<label for="txtCedula">Nombre:</label>
+<input id="txtCedula" [(ngModel)]="contacto.cedula"/>
+<br/>
+<label for="txtNombre">Nivel:</label>
+<input id="txtNombre" [(ngModel)]="contacto.nombre"/>
+<br/>
+<label for="txtDireccion">Km:</label>
+<input id="txtDireccion" [(ngModel)]="contacto.direccion"/>
+<br/>
+
+<br/>
+
+<button (click)="guardar()">Guardar</button>
