@@ -22,7 +22,6 @@ export class ListContactosComponent {
   }
 
   editar(contacto: Contacto){
-    //this.contacto = contacto
     this.contactoService.updateContacto(contacto)
     let params: NavigationExtras = {
       queryParams: {
@@ -30,10 +29,7 @@ export class ListContactosComponent {
 
       }
     }
-    //this.router.navigate(["paginas/edit-contacto"], params)
-   
- 
-
+    this.router.navigate(["paginas/edit-contacto"], params);
   }
 
   editar1(contacto: Contacto) {
